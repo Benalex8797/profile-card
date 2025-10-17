@@ -1,56 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Card</title>
   <link rel="stylesheet" href="index.css">
+  <script src="app.js"></script>
 </head>
 <body>
-  <article class="main" data-testid="test-profile-card">
-    <div class="profile-header">
-      <figure data-testid="test-user-avatar">
-        <img src="pic.jpg" alt="Profile Picture">
-      </figure>
-      <div class="text">
-        <header>
-          <h2 data-testid="test-user-name">ALEX BENJAMIN</h2>
-        </header>
-        <p data-testid="test-user-bio">Passionate frontend developer with a love for coding, design, and creating user-friendly experiences. Based in London, United Kingdom.</p>
-        <p data-testid="test-user-time">Current time: <span id="time"></span></p>
-      </div>
-    </div>
+    <article data-testid="test-profile-card">
+        <figure>
+            <img
+                src="pic.jpg"
+                alt="User Avatar"
+                data-testid="test-user-avatar"
+            />
+        </figure>
 
-     <nav data-testid="test-user-social-links">
-      <ul>
-        <li><a href="https://twitter.com/Atamilliondoll1" data-testid="test-user-social-twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/benjamin-alex-42b974350" data-testid="test-user-social-tiktok" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-       
-        <li><a href="https://github.com/Benalex8797" data-testid="test-user-social-snapchat" target="_blank" rel="noopener noreferrer">Github</a></li>
-      </ul>
-    </nav>
-    <section data-testid="test-user-hobbies">
-      <h3>Hobbies</h3>
-      <ul>
-        <li>Coding & UI Design</li>
-        <li>Football</li>
-        <li>Music & Dance</li>
-        <li>Gaming</li>
-        <li>Traveling</li>
-      </ul>
-    </section>
-    <section data-testid="test-user-dislikes">
-      <h3>Dislikes</h3>
-      <ul>
-        <li>Spicy food</li>
-        <li>Loud noises</li>
-        <li>Early mornings</li>
-        <li>Traffic jams</li>
-      </ul>
-    </section>
-   
-  </article>
-  <script>
+        <div class="content">
+            <header>
+                <h2 data-testid="test-user-name">ALEX BENJAMIN</h2>
+            </header>
+
+            <p class="first" data-testid="test-user-bio">
+               Passionate frontend developer with a love for coding, design, and creating user-friendly experiences. Based in London, United Kingdom.
+            </p>
+
+             <p data-testid="test-user-time">Current time: <span id="time"></span></p>
+
+            <nav>
+                <ul data-testid="test-user-social-links">
+                    <li>
+                        <a
+                        href="https://twitter.com/Atamilliondoll1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter"
+                        >
+                            Twitter
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a 
+                        href="https://github.com/Benalex8797"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-github"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a
+                        href="https://www.linkedin.com/in/benjamin-alex-42b974350"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-linkedin"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding & UI Design</li>
+                    <li>Football</li>
+                    <li>Music & Dance</li>
+                    <li>Gaming</li>
+                    <li>Traveling</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Slow Wi-Fi</li>
+                    <li>Spicy food</li>
+                    <li>Loud noises</li>
+                    <li>Early mornings</li>
+                   
+                </ul>
+            </section>
+        </div>
+    </article>
+    <script>
     function updateTime() {
       document.getElementById('time').textContent = Date.now();
     }

@@ -21,7 +21,7 @@ A sleek, interactive profile card webpage showcasing personal information, socia
 ## How to View
 
 1. Clone or download the project files.
-2. Open `design.html` in any modern web browser.
+2. Open `index.html` in any modern web browser.
 3. The profile card will load with all interactive elements.
 
-No server or build process is required as this is a static webpage
+No server or build process is required as this is a static webpage.
