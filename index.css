@@ -17,7 +17,7 @@ article[data-testid="test-profile-card"] {
   flex-direction: column;
   max-width: 500px;
   width: 90%;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -28,8 +28,8 @@ figure {
 }
 
 img[data-testid="test-user-avatar"] {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid rgba(255, 255, 255, 0.8);
@@ -48,19 +48,19 @@ img[data-testid="test-user-avatar"] {
 }
 header {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 h2[data-testid="test-user-name"] {
   margin: 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #222;
 }
 
 p[data-testid="test-user-bio"] {
   color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   padding-left: 0%;
 }
@@ -73,14 +73,13 @@ p[data-testid="test-user-bio"] {
 nav {
   background: rgba(102, 126, 234, 0.2);
   border-radius: 15px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 nav ul[data-testid="test-user-social-links"] {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
- 
 }
 nav li {
   border-radius: 30px;
@@ -106,21 +105,19 @@ nav a {
 
 nav a:hover {
   transform: translateY(-3px) scale(1.05);
-  /* color: black; */
 }
 [data-testid="test-user-social-twitter"]:hover {
-  background: #1da1f2; /* Twitter Blue */
+  background: #1da1f2;
 }
 
 [data-testid="test-user-social-github"]:hover {
-  background: #333; /* GitHub Black */
+  background: #333;
 }
 
 [data-testid="test-user-social-linkedin"]:hover {
-  background: #0a66c2; /* LinkedIn Blue */
+  background: #0a66c2;
 }
 
-/* Add subtle glow for each brand */
 [data-testid="test-user-social-twitter"]:hover {
   box-shadow: 0 0 12px rgba(29, 161, 242, 0.6);
 }
@@ -132,26 +129,37 @@ nav a:hover {
 }
 
 section {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hobbies {
+  background-color: #e6f7ff; 
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.dislikes {
+  background-color: #ffe6e6; 
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 section h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #333;
 }
 
 ul {
   list-style-type: disc;
-  padding-left: 1.2rem;
+  padding-left: 1rem;
   margin: 0;
 }
 
 li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
-/* Responsive layout */
 @media (min-width: 700px) {
   article[data-testid="test-profile-card"] {
     flex-direction: row;
