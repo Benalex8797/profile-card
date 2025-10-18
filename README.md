@@ -1,5 +1,7 @@
 # Profile Card
 
+This is my HNG Stage 0 project, where I created a Profile Card using HTML, CSS, and a bit of creativity. The card displays basic personal information such as my name, role, and contact links. It was designed to showcase my ability to structure web content, style with CSS, and build a clean, responsive layout.
+
 A sleek, interactive profile card webpage showcasing personal information, social links, hobbies, and dislikes with a modern glassmorphism design.
 
 ## Features
