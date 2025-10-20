@@ -77,13 +77,10 @@ nav {
 }
 nav ul[data-testid="test-user-social-links"] {
   list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
 }
+
 nav li {
   border-radius: 30px;
-  overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
