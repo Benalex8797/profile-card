@@ -15,7 +15,7 @@ article[data-testid="test-profile-card"] {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 800px;
   width: 90%;
   padding: 1rem;
   transition: all 0.3s ease;
@@ -118,6 +118,14 @@ nav a:hover {
   background: #0a66c2;
 }
 
+[data-testid="test-user-about-link"]:hover {
+  background: #28a745;
+}
+
+[data-testid="test-user-contact-link"]:hover {
+  background: #17a2b8;
+}
+
 [data-testid="test-user-social-twitter"]:hover {
   box-shadow: 0 0 12px rgba(29, 161, 242, 0.6);
 }
@@ -126,6 +134,14 @@ nav a:hover {
 }
 [data-testid="test-user-social-linkedin"]:hover {
   box-shadow: 0 0 12px rgba(10, 102, 194, 0.6);
+}
+
+[data-testid="test-user-about-link"]:hover {
+  box-shadow: 0 0 12px rgba(40, 167, 69, 0.6);
+}
+
+[data-testid="test-user-contact-link"]:hover {
+  box-shadow: 0 0 12px rgba(23, 162, 184, 0.6);
 }
 
 section {
