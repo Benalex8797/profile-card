@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
   transition: all 0.3s ease;
 }
@@ -150,6 +150,42 @@ nav a {
   box-sizing: border-box;
 }
 
+[data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
+[data-testid="test-user-contact-link"]::before { content: "📧 "; }
+[data-testid="test-connect-dropdown"]::before { content: "🔗 "; }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
 [data-testid="test-user-social-twitter"]::before {
   content: "\e61a";
   font-family: "Font Awesome 6 Brands";
@@ -165,8 +201,6 @@ nav a {
   font-family: "Font Awesome 6 Brands";
   margin-right: 0.5rem;
 }
-[data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
-[data-testid="test-user-contact-link"]::before { content: "📧 "; }
 
 nav a:hover {
   transform: translateY(-3px) scale(1.05);
@@ -242,6 +276,19 @@ li {
 }
 
 @media (max-width: 699px) {
+  body {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  article[data-testid="test-profile-card"] {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -285,6 +332,42 @@ li {
     text-align: left;
   }
 
+  [data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
+  [data-testid="test-user-contact-link"]::before { content: "📧 "; }
+  [data-testid="test-connect-dropdown"]::before { content: "🔗 "; }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .dropdown-menu.open {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    margin: 0;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
   [data-testid="test-user-social-twitter"]::before {
     content: "\e61a";
     font-family: "Font Awesome 6 Brands";
@@ -300,8 +383,6 @@ li {
     font-family: "Font Awesome 6 Brands";
     margin-right: 0.5rem;
   }
-  [data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
-  [data-testid="test-user-contact-link"]::before { content: "📧 "; }
 }
 
 @media (min-width: 700px) {

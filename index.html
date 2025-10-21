@@ -21,7 +21,7 @@
 
         <p class="first" data-testid="test-user-bio">
           Passionate frontend developer with a love for coding, design, and
-          creating user-friendly experiences. Based in London, United Kingdom.
+          creating user-friendly experiences.  I specialize in building modern, responsive web applications that not only look stunning but also deliver outstanding performance and user experience. <br>Based in Kaduna, Nigeria.
         </p>
 
         <p data-testid="test-user-time">
@@ -30,39 +30,6 @@
 
         <nav id="nav-menu">
           <ul data-testid="test-user-social-links">
-            <li>
-              <a
-                href="https://twitter.com/Atamilliondoll1"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-              >
-                Twitter
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/Benalex8797"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-              >
-                GitHub
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.linkedin.com/in/benjamin-alex-42b974350"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-              >
-                LinkedIn
-              </a>
-            </li>
-
             <li>
               <a href="about.html" data-testid="test-user-about-link">
                 About Me
@@ -73,6 +40,46 @@
               <a href="contact.html" data-testid="test-user-contact-link">
                 Contact Us
               </a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-testid="test-connect-dropdown">
+                Connect with me
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="https://twitter.com/Atamilliondoll1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter"
+                  >
+                    Twitter
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://github.com/Benalex8797"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github"
+                  >
+                    GitHub
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/benjamin-alex-42b974350"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -112,10 +119,19 @@
         nav.classList.add("open");
         document.body.classList.add("menu-open");
       });
-
+      
       nav.addEventListener("mouseleave", function () {
         nav.classList.remove("open");
         document.body.classList.remove("menu-open");
+      });
+      
+      // Dropdown toggle
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      
+      dropdownToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle('open');
       });
     </script>
   </body>
