@@ -150,6 +150,24 @@ nav a {
   box-sizing: border-box;
 }
 
+[data-testid="test-user-social-twitter"]::before {
+  content: "\e61a";
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 0.5rem;
+}
+[data-testid="test-user-social-github"]::before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 0.5rem;
+}
+[data-testid="test-user-social-linkedin"]::before {
+  content: "\f08c";
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 0.5rem;
+}
+[data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
+[data-testid="test-user-contact-link"]::before { content: "📧 "; }
+
 nav a:hover {
   transform: translateY(-3px) scale(1.05);
 }
@@ -266,6 +284,24 @@ li {
     box-sizing: border-box;
     text-align: left;
   }
+
+  [data-testid="test-user-social-twitter"]::before {
+    content: "\e61a";
+    font-family: "Font Awesome 6 Brands";
+    margin-right: 0.5rem;
+  }
+  [data-testid="test-user-social-github"]::before {
+    content: "\f09b";
+    font-family: "Font Awesome 6 Brands";
+    margin-right: 0.5rem;
+  }
+  [data-testid="test-user-social-linkedin"]::before {
+    content: "\f08c";
+    font-family: "Font Awesome 6 Brands";
+    margin-right: 0.5rem;
+  }
+  [data-testid="test-user-about-link"]::before { content: "ℹ️ "; }
+  [data-testid="test-user-contact-link"]::before { content: "📧 "; }
 }
 
 @media (min-width: 700px) {
