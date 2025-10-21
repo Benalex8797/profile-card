@@ -1,118 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile Card</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="app.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
     <article data-testid="test-profile-card">
-        <figure>
-            <img
-                src="pic.jpg"
-                alt="User Avatar"
-                data-testid="test-user-avatar"
-            />
-        </figure>
+      <figure>
+        <img src="pic.jpg" alt="User Avatar" data-testid="test-user-avatar" />
+      </figure>
 
-        <div class="content">
-            <header>
-                <h2 data-testid="test-user-name">ALEX BENJAMIN</h2>
-            </header>
+      <div class="content">
+        <header>
+          <h2 data-testid="test-user-name">ALEX BENJAMIN</h2>
+        </header>
 
-            <p class="first" data-testid="test-user-bio">
-               Passionate frontend developer with a love for coding, design, and creating user-friendly experiences. Based in London, United Kingdom.
-            </p>
+        <p class="first" data-testid="test-user-bio">
+          Passionate frontend developer with a love for coding, design, and
+          creating user-friendly experiences. Based in London, United Kingdom.
+        </p>
 
-             <p data-testid="test-user-time">Current time: <span id="time"></span></p>
+        <p data-testid="test-user-time">
+          Current time: <span id="time"></span>
+        </p>
 
-            <nav>
-                <ul data-testid="test-user-social-links">
-                    <li>
-                        <a
-                        href="https://twitter.com/Atamilliondoll1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-testid="test-user-social-twitter"
-                        >
-                            Twitter
-                        </a>
-                    </li>
+        <nav id="nav-menu">
+          <ul data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://twitter.com/Atamilliondoll1"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+            </li>
 
-                    <li>
-                        <a
-                        href="https://github.com/Benalex8797"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-testid="test-user-social-github"
-                        >
-                            GitHub
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="https://github.com/Benalex8797"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
 
-                    <li>
-                        <a
-                        href="https://www.linkedin.com/in/benjamin-alex-42b974350"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-testid="test-user-social-linkedin"
-                        >
-                            LinkedIn
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/benjamin-alex-42b974350"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
 
-                    <li>
-                        <a
-                        href="about.html"
-                        data-testid="test-user-about-link"
-                        >
-                            About Me
-                        </a>
-                    </li>
+            <li>
+              <a href="about.html" data-testid="test-user-about-link">
+                About Me
+              </a>
+            </li>
 
-                    <li>
-                        <a
-                        href="contact.html"
-                        data-testid="test-user-contact-link"
-                        >
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <li>
+              <a href="contact.html" data-testid="test-user-contact-link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-            <section class="hobbies">
-                <h3>Hobbies</h3>
-                <ul data-testid="test-user-hobbies">
-                    <li>Coding & UI Design</li>
-                    <li>Football</li>
-                    <li>Music & Dance</li>
-                    <li>Gaming</li>
-                    <li>Traveling</li>
-                </ul>
-            </section>
+        <section class="hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding & UI Design</li>
+            <li>Football</li>
+            <li>Music & Dance</li>
+            <li>Gaming</li>
+            <li>Traveling</li>
+          </ul>
+        </section>
 
-            <section class="dislikes">
-                <h3>Dislikes</h3>
-                <ul data-testid="test-user-dislikes">
-                    <li>Slow Wi-Fi</li>
-                    <li>Spicy food</li>
-                    <li>Loud noises</li>
-                    <li>Early mornings</li>
-                   
-                </ul>
-            </section>
-        </div>
+        <section class="dislikes">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Slow Wi-Fi</li>
+            <li>Spicy food</li>
+            <li>Loud noises</li>
+            <li>Early mornings</li>
+          </ul>
+        </section>
+      </div>
     </article>
     <script>
-    function updateTime() {
-      document.getElementById('time').textContent = Date.now();
-    }
-    updateTime();
-    setInterval(updateTime, 1000); // Update every second for accuracy
-  </script>
-</body>
+      function updateTime() {
+        document.getElementById("time").textContent = Date.now();
+      }
+      updateTime();
+      setInterval(updateTime, 1000); // Update every second for accuracy
+
+      // Mobile menu hover
+      const nav = document.getElementById("nav-menu");
+      nav.addEventListener("mouseenter", function () {
+        nav.classList.add("open");
+        document.body.classList.add("menu-open");
+      });
+
+      nav.addEventListener("mouseleave", function () {
+        nav.classList.remove("open");
+        document.body.classList.remove("menu-open");
+      });
+    </script>
+  </body>
 </html>
